@@ -37,6 +37,7 @@ dependencies {
     implementation("io.amplicode:react-admin-utils-starter:0.2.0")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
     implementation("org.flywaydb:flyway-core")
+    implementation("org.springframework.boot:spring-boot-starter-security")
 }
 
 tasks.withType<Test> {
