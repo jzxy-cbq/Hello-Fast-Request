@@ -29,12 +29,14 @@ dependencies {
     compileOnly("org.projectlombok:lombok")
     developmentOnly("org.springframework.boot:spring-boot-docker-compose")
     runtimeOnly("org.postgresql:postgresql")
+    runtimeOnly("org.flywaydb:flyway-database-postgresql")
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
     implementation("io.amplicode:react-admin-utils-starter:0.2.0")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
+    implementation("org.flywaydb:flyway-core")
 }
 
 tasks.withType<Test> {

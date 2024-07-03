@@ -8,9 +8,5 @@ spring:
     open-in-view: false
     hibernate:
       ddl-auto: update
-  sql:
-    init:
-      schema-locations: classpath*:db/schema.sql
-      data-locations: classpath*:db/data.sql
 server:
   port: 8081
