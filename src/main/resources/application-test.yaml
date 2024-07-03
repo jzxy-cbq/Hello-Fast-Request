@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    password: ${DB_PASSWORD:root}
+    username: ${DB_USERNAME:root}
+    url: jdbc:postgresql://localhost/db
+  jpa:
+    open-in-view: false
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    hibernate:
+      ddl-auto: update
+  sql:
+    init:
+      schema-locations: classpath*:db/schema.sql
+      data-locations: classpath*:db/data.sql
+server:
+  port: 8082
